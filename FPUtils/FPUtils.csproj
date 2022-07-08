@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Company>Fernando Prass</Company>
+    <Copyright>Fernando Prass</Copyright>
+    <FileVersion></FileVersion>
+    <AssemblyVersion></AssemblyVersion>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/fernandoprass/fputils</RepositoryUrl>
+    <Description>Extensions, utilities and a Response class</Description>
+	  <Version>0.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>
