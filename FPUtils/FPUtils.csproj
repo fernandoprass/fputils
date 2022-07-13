@@ -10,7 +10,7 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/fernandoprass/fputils</RepositoryUrl>
     <Description>Extensions, utilities and a Response class</Description>
-	  <Version>0.0.1</Version>
+	  <Version>0.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>

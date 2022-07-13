@@ -1,3 +1,4 @@
+using FPUtils.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,8 @@ namespace FPUtils.Response
       public bool IsValid => !HasError;
 
       public bool HasError => _messages.Any(x => x.Type == MessageType.Error);
+
+      public bool HasMessage => _messages.Any();
 
       public bool HasWarning => _messages.Any(x => x.Type == MessageType.Warning);
 
@@ -31,9 +34,9 @@ namespace FPUtils.Response
    }
 
    public class Result<T> : Result {
-      public bool IsValidAndDataIsNotNull => IsValid && Data != null;
+      public bool IsValidAndDataIsNotNull => IsValid && Data.IsNotNull();
 
-      public bool IsValidAndDataIsNull => IsValid && Data == null;
+      public bool IsValidAndDataIsNull => IsValid && Data.IsNull();
 
       public bool HasData => Data != null;
 
