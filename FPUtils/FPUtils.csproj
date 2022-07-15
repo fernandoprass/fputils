@@ -9,8 +9,9 @@
     <AssemblyVersion></AssemblyVersion>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/fernandoprass/fputils</RepositoryUrl>
-    <Description>Extensions, utilities and a Response class</Description>
-	  <Version>0.1.0</Version>
+    <Description>Extensions, utilities, response and a Validation class</Description>
+	<Version>0.1.1</Version>
+	<PackageLicenseFile>D:\Fernando\professional\FPUtils\FPUtils\license.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>

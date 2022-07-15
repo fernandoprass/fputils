@@ -1,8 +1,9 @@
 # FPUtils
-FPUtil is a Nuget package for Visual Studio that contains a set of extensions, utilities, and a response class.
+FPUtil is a Nuget package for Visual Studio that contains a set of extensions, security, response, and fluent validation classes.
 
-## Extensions
+## Library
 
+### Extensions
 - DateTimeExtension
     - FirstDayOfMonth() - Return the first day of the mounth for a given date
     - DaysInMonth() - Return the number of days in the mounth for a given date
@@ -29,16 +30,27 @@ FPUtil is a Nuget package for Visual Studio that contains a set of extensions, u
     - KeepOnlyNumbersAndLettersAndSpaces() - Remove simbols keeping only numbers, letters and spaces 
     - RemoveAccents() - Remove accents
 
-## Response
-
+### Response
 - Result: a set of classes to be used as a return in APIs
 
-## Utilities
-
-- Security
+### Security
+- Cryptography
     - Encrypt() - Encrypt a string
     - Decrypt() - Decrypt a string
 
+### Validation
+- Validator: a fluent validation class
+- EntityValidator: a set of common tests for entities
+    - Contains() - Determines whether a sequence contains a specified elemen
+    - ContainsOnlyNumber() - Determines whether a sequence contains only numeric characters 
+    - ExactNumberOfCharacteres() - Check if a string has an exact character length
+    - ExactNumberOfCharacteresIf() - Check if a string has an exact character length if a given condition is true
+    - IsMandatory() - Check is the value was filled
+    - IsMandatoryIf() - Check is the value was filled if a given condition is true
+    - IsValidDate() - Determines whether a string is a valid date
+    - IsValidEmailAddress() - Determines whether a string is a valid email address
+    - MaxLenght() . Determines whether a string has the maximum size allowed
+    - MaxLenghtIf() . Determines whether a string has the maximum size allowed if a given condition is true
 
 ## Installation
 
@@ -49,18 +61,16 @@ Install-Package FPUtils -Version 0.0.1
 ```
 
 Package Reference (editing the Project File):
-```sh
+```
 <PackageReference Include="FPUtils" Version="0.0.1" />
 ```
 
 .NET.CLI:
-```sh
+```
 dotnet add package FPUtils --version 0.0.1
 ```
 
 Change 0.0.1 for the current version
-
-**Free Software, Hell Yeah!**
 
 Develeped by Fernando Prass
 
